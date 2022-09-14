@@ -27,7 +27,7 @@ const Home = () => {
     const search = searchValue ? `&search=${searchValue}` : '';
 
     fetch(
-      `https://62e977dd01787ec712189139.mockapi.io/items?page=${currentPage}&limit=4${category}&sortBy=${sortBy}&order=${order}${search}`,
+      `https://62e977dd01787ec712189139.mockapi.io/items?page=${currentPage}&limit=4&${category}&sortBy=${sortBy}&order=${order}${search}`,
     )
       .then((res) => {
         return res.json();
